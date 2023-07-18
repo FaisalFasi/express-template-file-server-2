@@ -1,0 +1,8 @@
+//- page-a.pug
+extends layout.pug
+
+block content
+  p= title
+   each message in messages 
+       li #{message.first_name} : #{message.text}
+       img(src=message.avatar , alt="" ) 
